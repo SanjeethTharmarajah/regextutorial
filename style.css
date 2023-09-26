@@ -1,0 +1,80 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, pre {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header section */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style section headings */
+section h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style code blocks */
+pre {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    font-size: 90%;
+}
+
+/* Style the table of contents */
+#table-of-contents ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#table-of-contents li {
+    margin-bottom: 10px;
+}
+
+#table-of-contents a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Style the author section */
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+}

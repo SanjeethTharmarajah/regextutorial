@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Regular Expressions Tutorial</title>
+</head>
+<body>
+    <header>
+        <h1>Regular Expressions Tutorial</h1>
+        <p>An Introduction to Regular Expressions</p>
+    </header>
+    
+    <main>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>In this tutorial, we will describe a regex pattern for matching email addresses. We will break down the pattern into its components and provide explanations and examples for each part. Here is the regex pattern we will be discussing:</p>
+            <pre>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</pre>
+        </section>
+        
+        <section id="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#anchors">Anchors</a></li>
+                <li><a href="#quantifiers">Quantifiers</a></li>
+                <li><a href="#grouping-constructs">Grouping Constructs</a></li>
+                <li><a href="#bracket-expressions">Bracket Expressions</a></li>
+                <li><a href="#character-classes">Character Classes</a></li>
+                <li><a href="#the-or-operator">The OR Operator</a></li>
+                <li><a href="#flags">Flags</a></li>
+                <li><a href="#character-escapes">Character Escapes</a></li>
+            </ul>
+        </section>
+        
+        <section id="anchors">
+            <h2>Anchors</h2>
+            <p>Anchors in regular expressions define the position in the text where the pattern should start or end. They are represented by <code>^</code> and <code>$</code>. The <code>^</code> anchor specifies the start of the string, while the <code>$</code> anchor indicates the end.</p>
+            <p>Example:</p>
+            <pre>
+^startOfString
+endOfString$
+            </pre>
+        </section>
+        
+        <section id="quantifiers">
+            <h2>Quantifiers</h2>
+            <p>Quantifiers determine how many times a character or group should be matched. For example, <code>*</code> matches zero or more, <code>+</code> matches one or more, and <code>?</code> matches zero or one.</p>
+            <p>Example:</p>
+            <pre>
+zeroOrMore*
+oneOrMore+
+zeroOrOne?
+            </pre>
+        </section>
+        
+        <section id="grouping-constructs">
+            <h2>Grouping Constructs</h2>
+            <p>Grouping constructs allow you to create subpatterns within your regex. They are enclosed in parentheses <code>()</code>. Groups can be used for capturing or non-capturing purposes.</p>
+            <p>Example:</p>
+            <pre>
+(Cat|Dog)
+(?:NonCapturing)
+            </pre>
+        </section>
+        
+        <section id="bracket-expressions">
+            <h2>Bracket Expressions</h2>
+            <p>Bracket expressions, also known as character classes, define a set of characters to match. For example, <code>[aeiou]</code> matches any vowel.</p>
+            <p>Example:</p>
+            <pre>
+[aeiou]
+[0-9]
+[^a-zA-Z] (Negation)
+            </pre>
+        </section>
+        
+        <section id="character-classes">
+            <h2>Character Classes</h2>
+            <p>Character classes are predefined sets of characters represented by escape sequences like <code>\d</code> (digit), <code>\w</code> (word character), and <code>\s</code> (whitespace).</p>
+            <p>Example:</p>
+            <pre>
+\d (Digit)
+\w (Word Character)
+\s (Whitespace)
+            </pre>
+        </section>
+        
+        <section id="the-or-operator">
+            <h2>The OR Operator</h2>
+            <p>The OR operator <code>|</code> allows you to specify alternatives in your regex pattern. For example, <code>(cat|dog)</code> matches either "cat" or "dog."</p>
+            <p>Example:</p>
+            <pre>
+(cat|dog)
+(apple|banana|cherry)
+            </pre>
+        </section>
+        
+        <section id="flags">
+            <h2>Flags</h2>
+            <p>Flags in regular expressions modify how the pattern is matched. Common flags include <code>g</code> (global), <code>i</code> (case-insensitive), and <code>m</code> (multiline).</p>
+            <p>Example:</p>
+            <pre>
+/abc/g (Global)
+/abc/i (Case-Insensitive)
+/abc/m (Multiline)
+            </pre>
+        </section>
+        
+        <section id="character-escapes">
+            <h2>Character Escapes</h2>
+            <p>Character escapes allow you to match special characters like <code>.</code> and <code>*</code> literally. To match a literal dot, use <code>\.</code>.</p>
+            <p>Example:</p>
+            <pre>
+\.
+\*
+\(
+            </pre>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="author-info">
+            <h2>Author</h2>
+            <p>This tutorial was created by [Your Name]. If you'd like to explore more regex patterns and examples, feel free to visit <a href="https://github.com/your-github-username">my GitHub profile</a>.</p>
+        </section>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
