@@ -107,3 +107,8 @@ This tutorial was created by [Sanjeeth Tharmarajah](https://github.com/SanjeethT
 
 By following this tutorial, you'll have a solid understanding of how to use regex to match email addresses, along with a clear explanation of the key regex components used in the pattern. If you have any questions or feedback, don't hesitate to contact the author via their GitHub profile. Happy regex learning!
 
+You can also view an HTML version of this tutorial in the following link
+
+https://sanjeeththarmarajah.github.io/regextutorial/
+
+
